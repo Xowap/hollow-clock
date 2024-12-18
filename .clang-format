@@ -1,0 +1,102 @@
+Language: Cpp
+# Use 4 spaces for indentation
+IndentWidth: 4
+# Use spaces instead of tabs
+UseTab: Never
+# Limit line width to 100 characters
+ColumnLimit: 100
+
+# Always use braces for control statements
+InsertBraces: true
+# Always break after an open bracket if the contents can't fit on a single line
+AlignAfterOpenBracket: AlwaysBreak
+# Don't pack function arguments
+BinPackArguments: false
+# Don't pack function parameters
+BinPackParameters: false
+
+# Ensure one statement per line
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+AllowShortLoopsOnASingleLine: false
+
+# Break before braces
+BreakBeforeBraces: Attach
+
+# Align trailing comments
+AlignTrailingComments: true
+
+# Space before parentheses
+SpaceBeforeParens: ControlStatements
+
+# Space in empty parentheses
+SpaceInEmptyParentheses: false
+
+# Spaces before and after binary operators
+SpaceBeforeAssignmentOperators: true
+
+# Space after casts
+SpaceAfterCStyleCast: false
+
+# Indentation of access modifiers
+AccessModifierOffset: -4
+
+# Indentation of case labels
+IndentCaseLabels: true
+
+# Align consecutive assignments
+AlignConsecutiveAssignments: true
+
+# Align consecutive declarations
+AlignConsecutiveDeclarations: true
+
+# Break before binary operators
+BreakBeforeBinaryOperators: NonAssignment
+
+# Always break before multiline strings
+AlwaysBreakBeforeMultilineStrings: true
+
+# Always break after template declarations
+AlwaysBreakTemplateDeclarations: Yes
+
+# Indent preprocessor directives
+IndentPPDirectives: AfterHash
+
+# Don't reflow comments
+ReflowComments: false
+
+# Sort includes
+SortIncludes: CaseSensitive
+
+# Break after operators in inheritance list
+BreakInheritanceList: AfterColon
+
+# Break after comma in function declarations and calls
+BreakConstructorInitializers: AfterColon
+
+# Penalties to encourage line breaks
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 200
+
+# Pointer alignment
+PointerAlignment: Left
+
+# Reference alignment
+ReferenceAlignment: Left
+
+# Array initialization
+Cpp11BracedListStyle: false
+SpacesInContainerLiterals: true
+
+# Ensure each array element is on its own line
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AlignArrayOfStructures: Right
