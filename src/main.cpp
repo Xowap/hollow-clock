@@ -1,7 +1,9 @@
 #include <Arduino.h>
 #include <MotorController.h>
+#include <SimpleWebSerial.h>
 
 MotorController motor;
+SimpleWebSerial webSerial;
 
 void setup() {
     Serial.begin(9600);
@@ -13,10 +15,11 @@ void setup() {
 }
 
 void loop() {
-    const long REFRESH_PERIOD_MS = 10000;
+    const long REFRESH_PERIOD_MS = 1 * 1000;
 
     while (true) {
         motor.refresh();
         delay(REFRESH_PERIOD_MS);
+        webSerial.send("youpi", "updating the time yolo");
     }
 }
